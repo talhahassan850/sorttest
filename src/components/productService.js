@@ -1,6 +1,6 @@
 import GenericService from "./genericService";
 class ProductsService extends GenericService {
-  constructor() {
+  constructor(props) {
     super();
   }
   addProduct = (data) => this.post("product", data);
