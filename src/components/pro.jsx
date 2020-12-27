@@ -66,7 +66,7 @@ const Pro = (props) => {
           <AddIcon />
         </Fab>
       )}
-      {products.length == 0 ? (
+      {products.length === 0 ? (
         <p>There are no products</p>
       ) : (
         <Grid container spacing={3}>

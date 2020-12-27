@@ -1,7 +1,7 @@
 import GenericService from "./genericService";
 import jwtDecode from "jwt-decode";
 class UserService extends GenericService {
-  constructor() {
+  constructor(props) {
     super();
   }
   login = (email, password) =>
@@ -35,7 +35,7 @@ class UserService extends GenericService {
   //if (this.getLoggedInUser().role == "admin") return true;
   isAdmin = () => {
     if (this.isLoggedIn()) {
-      if (this.getLoggedInUser().name == "admin") return true;
+      if (this.getLoggedInUser().name === "admin") return true;
       else return false;
     } else return false;
   };
