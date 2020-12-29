@@ -37,7 +37,7 @@ function App(){
     <ToastContainer />
    
 
-      <div className="c2">
+      <div className="">
       <Switch>
           <Route path="/login" exact component={Login} />
           <Route path="/register" exact component={Register} />
