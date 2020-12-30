@@ -9,11 +9,11 @@ class Carasol extends React.Component{
 
     render(){
         return(
-            <div style={{}}>
+            <div style={{paddingLeft:"5rem", paddingRight:"5rem"}}>
               <Carousel>
   <Carousel.Item interval={1000}>
     <img
-      style={{width:"100%", height:"28rem"}}
+      style={{width:"100%", height:"35rem"}}
       src={pic}
       alt="First slide"
     />
@@ -23,7 +23,7 @@ class Carasol extends React.Component{
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
-      style={{width:"100%", height:"28rem"}}
+      style={{width:"100%", height:"35rem"}}
       src={p2}
       alt="Pic slide"
     />
@@ -32,7 +32,7 @@ class Carasol extends React.Component{
   </Carousel.Item>
   <Carousel.Item>
     <img
-      style={{width:"100%", height:"28rem"}}
+      style={{width:"100%", height:"35rem"}}
       src={p3}  
       alt="Third slide"
     />
