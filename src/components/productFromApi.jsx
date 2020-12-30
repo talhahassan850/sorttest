@@ -4,11 +4,13 @@ import { Button } from "@material-ui/core";
 import productService from "./productService";
 import { withRouter } from "react-router";
 import userService from "./userService";
+import CardMedia from '@material-ui/core/CardMedia';
 const SingleProduct = (props) => {
 const { product, onDelete, history } = props;
 console.log(props);
   return (
     <Grid item xs={4}>
+      
       <h2>{" "}
       {userService.isAdmin() && (
           <>

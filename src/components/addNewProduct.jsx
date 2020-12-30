@@ -40,6 +40,7 @@ const NewProducts = (props) => {
             setSize(e.target.value);
           }}
         />
+        
       </Grid>
       <Grid item xs={3}></Grid>
       <Grid item xs={3}></Grid>
