@@ -38,3 +38,9 @@ code {
 .a6 {
   color: blueviolet;
 }
+
+.b1 {
+  padding-top: 5rem;
+  padding-left: 30%;
+  justify-content: center;
+}

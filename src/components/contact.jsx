@@ -1,38 +1,37 @@
-import { Button } from '@material-ui/core';
-import React from 'react';
-import { Form } from 'react-bootstrap';
+import React from "react";
+import "../index.css";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+
 const Contact = () => {
-    return ( 
-        <div style={{width:"30%",border:"2px solid black",height:"20rem"  ,      
-        marginLeft:"30%", backgroundColor:"zure",
-        borderRadius:"10px"}}>
-           <Form>
-           <Form.Group controlId="formBasicName">
-    <Form.Label>Your Name</Form.Label>
-    <Form.Control type="name" placeholder="Enter name..." />
-  </Form.Group>
-
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email..." />
-  </Form.Group>
-
-  <Form.Group controlId="formBasicDetail">
-    <Form.Label>Enter Detail</Form.Label>
-    <textarea  rows="4" cols="45.5" placeholder="Enter detail ..." >
-  </textarea>
-  </Form.Group>
-  
- 
-  <a href="/">
-    <div> <>
-  <Button style={{backgroundColor:"blue"
-, marginLeft:"40%"}} type="submit">Submit</Button>{' '}
-</>
-</div></a>
-</Form>
+return (
+  <div className="b1">
+<MDBContainer >
+  <MDBRow>
+    <MDBCol md="6">
+      <form>
+        <p className="h5 text-center mb-4">Write to us</p>
+        <div className="grey-text">
+          <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
+            success="right" />
+          <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
+            success="right" />
+         
+          <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
         </div>
-     );
-}
- 
+        <a href="/">
+        <div className="text-center">
+          <MDBBtn outline color="secondary">
+            Submit
+            <MDBIcon far icon="paper-plane" className="ml-1" />
+          </MDBBtn>
+        </div>
+        </a>
+      </form>
+    </MDBCol>
+  </MDBRow>
+</MDBContainer>
+</div>
+);
+};
+
 export default Contact;
