@@ -47,7 +47,7 @@ console.log(props);
       </>
         )}
     </h2>
-    <p>code={product.code}</p>
+    <p>Code={product.code}</p>
     <p>Price={product.price}</p>
     <p>Size={product.size}</p>
     <hr />
