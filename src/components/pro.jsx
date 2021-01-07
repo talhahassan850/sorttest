@@ -10,7 +10,7 @@ import userService from "./userService";
 //import { Pagination } from "react-bootstrap";
 const UseStyles = makeStyles((theme) => ({
     addBtn: {
-      position: "absolute",
+      position: "fixed",
       bottom: theme.spacing(2),
       right: theme.spacing(2),
     },
@@ -44,8 +44,21 @@ const Pro = (props) => {
   //console.log("inside products");
     return ( 
         <div>
-      <h1>Products pro page</h1>
-      Records Per Page:{" "}
+      <a href="/">
+            <div style={{display:"flex",            
+        justifyContent: "center",
+        alignItems: "center",
+        width:"100%"}}>
+                <div style={{color: "black",
+        fontSize:"100px",
+        fontFamily:"cursive"  ,
+        textShadow: "2px 2px 5px blue,2px 2px 5px red ",
+        fontVariant:"small-caps",}}>
+                <p>The Style Hub</p>
+                </div>
+            </div></a>
+            <div style={{paddingLeft:"4rem"}}>
+      Records Per Page:{" "}  <br/>
       <select
         value={perPage}
         onChange={(e) => setPerPage(e.target.value)}
@@ -55,7 +68,7 @@ const Pro = (props) => {
         <option value="4">Four</option>
         <option value="6">Six</option>
         <option value="8">Eight</option>
-      </select> 
+      </select> </div>
       {userService.isLoggedIn() && (
         <Fab 
           color="primary"

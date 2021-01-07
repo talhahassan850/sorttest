@@ -8,19 +8,21 @@ const UpdateProducts = (props) => {
     const [code, setCode] = React.useState(0);
     const [size, setSize] = React.useState("");
     const [price, setPrice] = React.useState(0);
+    const [image, setImage] = React.useState("");
     const id = props.match.params.id;
     React.useEffect(() => {
       productService.getSingleProduct(id).then((data) => {
         setCode(data.code);
         setSize(data.size)
         setPrice(data.price);
+        setImage(data.image);
       });
     }, [])
     return ( 
       <Admin>
       <Grid container spacing={3}>
       <Grid item xs={12}>
-        <h1>Update Product</h1>
+        <h1 style={{textAlign:"center", paddingTop:"6rem"}}>Update Product</h1>
       </Grid>
       <Grid item xs={3}></Grid>
       <Grid item xs={6}>
@@ -48,6 +50,14 @@ const UpdateProducts = (props) => {
             setSize(e.target.value);
           }}
         />
+         <TextField
+          label="image"
+          fullWidth
+          value={image}
+          onChange={(e) => {
+            setImage(e.target.value);
+          }}
+        />
       </Grid>
       <Grid item xs={3}></Grid>
       <Grid item xs={3}></Grid>
@@ -57,7 +67,7 @@ const UpdateProducts = (props) => {
           color="primary"
           onClick={(e) => {
             productService
-              .updateProduct(id, { code, price, size })
+              .updateProduct(id, { code, price, size, image })
               .then((data) => {
                 console.log(data);
                 props.history.push("/product");

@@ -24,6 +24,21 @@
   color: white;
 }
 
+.c1 {
+  color: #282c34;
+  text-align: center;
+}
+.a8 {
+  height: 15rem;
+  width: 100%;
+}
+.b1 {
+  padding-right: 4rem;
+  text-align: center;
+}
+.b2 {
+  text-align: center;
+}
 .App-link {
   color: #61dafb;
 }

@@ -14,6 +14,7 @@ import a4 from "./pics/a4.jpg";
 import a6 from "./pics/a6.jpg";
 import c6 from "./pics/c6.jpg";
 import c8 from "./pics/c8.jpg";
+import "../App.css";
 
 class Second extends Component {
   render() {
@@ -39,7 +40,8 @@ class Second extends Component {
           <MDBView hover zoom>
             <MDBCardImage cascade className="img-fluid" src={h6} 
              style={{width:"100%",height:"20rem"}}/> </MDBView>
-            <MDBCardBody cascade>
+      
+            <MDBCardBody cascade className="c1">
               <MDBCardTitle>LightWeight Jogger</MDBCardTitle>
               <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>1000</b>rs. | '42' size </pre></MDBCardText>
@@ -47,6 +49,7 @@ class Second extends Component {
               <MDBIcon icon="star" /></p>
               <MDBBtn href="#">shop Now</MDBBtn>
             </MDBCardBody>
+            
           </MDBCard>
         </MDBCol>
         <MDBCol >
@@ -54,7 +57,7 @@ class Second extends Component {
           <MDBView hover zoom>
             <MDBCardImage cascade className="img-fluid" src={h7} 
             style={{width:"100%",height:"20rem"}}/></MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>BasketBall Jogger</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>1200</b>rs. | '40' size </pre>
@@ -68,7 +71,7 @@ class Second extends Component {
           <MDBCard narrow>
             <MDBCardImage cascade className="img-fluid" src={h8}
             style={{width:"100%",height:"20rem"}} />
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Track Jogger</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>1800</b>rs. | '40' size </pre></MDBCardText>
@@ -90,7 +93,7 @@ class Second extends Component {
             <MDBCardImage cascade className="img-fluid" src={h9}
              style={{width:"100%",height:"18rem"}} />
              </MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Nike Jogger</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}><del>2000</del></b>rs.| '42' size </pre></MDBCardText>
@@ -106,7 +109,7 @@ class Second extends Component {
             <MDBCardImage cascade className="img-fluid" src={h10}
             style={{width:"100%",height:"18rem"}} />
             </MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
               <MDBCardTitle>Ladies Jogger</MDBCardTitle>
               <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}><del>2600</del></b>rs.| '36' size </pre></MDBCardText>
@@ -122,7 +125,7 @@ class Second extends Component {
             <MDBCardImage cascade className="img-fluid" src={h13} 
             style={{width:"100%",height:"18rem"}}/>
             </MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Nike Jogger</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}><del>2000</del></b>rs.| '40' size </pre></MDBCardText>
@@ -136,7 +139,7 @@ class Second extends Component {
           <MDBCard narrow>
             <MDBCardImage cascade className="img-fluid" src={h15} 
             style={{width:"100%",height:"18rem"}}/>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Track Jogger</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}><del>3000</del></b>rs.| '38' size </pre></MDBCardText>
@@ -155,7 +158,7 @@ class Second extends Component {
           <MDBView hover zoom>
             <MDBCardImage cascade className="img-fluid" src={a2}
              style={{width:"100%",height:"18rem"}} /></MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Hugo Boss Scent 500ml</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>1800</b>rs.</pre></MDBCardText>
@@ -170,7 +173,7 @@ class Second extends Component {
             <MDBCardImage cascade className="img-fluid" src={a3}
             style={{width:"100%",height:"18rem"}} />
             </MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
               <MDBCardTitle>Tom ford Tuscan 200ml</MDBCardTitle>
               <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>1500</b>rs.</pre></MDBCardText>
@@ -183,7 +186,7 @@ class Second extends Component {
           <MDBCard narrow>
             <MDBCardImage cascade className="img-fluid" src={a4} 
             style={{width:"100%",height:"18rem"}}/>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Alhambra Perseus 100ml</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>2500</b>rs.</pre></MDBCardText>
@@ -196,7 +199,7 @@ class Second extends Component {
           <MDBCard narrow>
             <MDBCardImage cascade className="img-fluid" src={a6} 
             style={{width:"100%",height:"18rem"}}/>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Swiss Arabian Al 500ml</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>1000</b>rs.</pre></MDBCardText>
@@ -217,7 +220,7 @@ class Second extends Component {
             <MDBCardImage cascade className="img-fluid" src={c6}
              style={{width:"100%",height:"25rem"}} />
              </MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
             <MDBCardTitle>Steel</MDBCardTitle>
             <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>1800</b>rs. | 20 'size'</pre></MDBCardText>
@@ -232,7 +235,7 @@ class Second extends Component {
             <MDBCardImage cascade className="img-fluid" src={c8}
             style={{width:"100%",height:"25rem"}} />
             </MDBView>
-            <MDBCardBody cascade>
+            <MDBCardBody cascade  className="c1">
               <MDBCardTitle>Steel</MDBCardTitle>
               <MDBCardText><pre><b 
               style={{fontSize:"2rem",color:"slategray"}}>800</b>rs. | 20 'size'</pre></MDBCardText>

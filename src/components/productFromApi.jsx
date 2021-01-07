@@ -4,14 +4,26 @@ import { Button } from "@material-ui/core";
 import productService from "./productService";
 import { withRouter } from "react-router";
 import userService from "./userService";
+import "../App.css"
 //import CardMedia from '@material-ui/core/CardMedia';
 const SingleProduct = (props) => {
 const { product, onDelete, history } = props;
 console.log(props);
   return (
     <Grid item xs={4}>
-      
-      <h2>{" "}
+      <br/>
+      <h2>
+      <div className="b1">
+
+      <img src={product.image } className="a8"/>
+      <div className="b2">
+      <p style={{fontSize:"1.2rem", color:"darkblue",
+     fontWeight:"bold"}}>{product.price}</p>{" "}
+      <p style={{fontSize:"1.2rem", color:"darkblue"}}>{product.size}</p>{" "}
+      <a href="/">
+      <Button style={{background:"lightblue"}}>Add to cart</Button></a>
+      </div>
+      <br/>
       {userService.isAdmin() && (
           <>
       <Button
@@ -45,12 +57,11 @@ console.log(props);
         Delete
       </Button>
       </>
-        )}
+        )}</div>
     </h2>
-    <p>Code={product.code}</p>
-    <p>Price={product.price}</p>
-    <p>Size={product.size}</p>
-    <hr />
+    <hr/>
+   
+   
   </Grid>
   );
 };

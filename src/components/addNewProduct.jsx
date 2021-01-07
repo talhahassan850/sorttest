@@ -8,11 +8,13 @@ const NewProducts = (props) => {
     const [code, setCode] = React.useState(0);
     const [size, setSize] = React.useState("");
     const [price, setPrice] = React.useState(0);
+    const [image, setImage] = React.useState("");
     return ( 
       <Auth>
         <Grid container spacing={3}>
       <Grid item xs={12}>
-        <h1>Add New Product</h1>
+        <h1 style={{textAlign:"center", paddingTop:"6rem"}}>
+          Add New Product</h1>
       </Grid>
       <Grid item xs={3}></Grid>
       <Grid item xs={6}>
@@ -40,6 +42,14 @@ const NewProducts = (props) => {
             setSize(e.target.value);
           }}
         />
+        <TextField
+          label="image"
+          fullWidth
+          value={image}
+          onChange={(e) => {
+            setImage(e.target.value);
+          }}
+        />
         
       </Grid>
       <Grid item xs={3}></Grid>
@@ -50,7 +60,7 @@ const NewProducts = (props) => {
           color="primary"
           onClick={(e) => {
             productService
-              .addProduct({ code, price,size })
+              .addProduct({ code, price,size,image })
               .then((data) => {
                 console.log(data);
                 props.history.push("/product");
